@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql303.infinityfree.com
--- Generation Time: Apr 07, 2025 at 10:46 AM
+-- Generation Time: Apr 07, 2025 at 11:16 AM
 -- Server version: 10.6.19-MariaDB
 -- PHP Version: 7.2.22
 
@@ -36,6 +36,18 @@ CREATE TABLE `morador` (
   `telefoe` int(10) DEFAULT NULL,
   `id_morador` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `morador`
+--
+
+INSERT INTO `morador` (`nome`, `cpf`, `bloco`, `apartamento`, `telefoe`, `id_morador`) VALUES
+('Talia Santana', 987654321, 1, 12, -1366, 1),
+('Aurelio Duarte', 123456789, 1, 37, 3333, 2),
+('Márcia Santos', 999888777, 2, 118, -2222, 3),
+('Lucia Almeida', 333444555, 1, 71, 4454, 4),
+('Carlos Andrade', 244477766, 2, 98, 2828, 5),
+('Lilian Farias', 888222111, 2, 26, 845, 6);
 
 -- --------------------------------------------------------
 
@@ -90,7 +102,7 @@ ALTER TABLE `visitante`
 -- AUTO_INCREMENT for table `morador`
 --
 ALTER TABLE `morador`
-  MODIFY `id_morador` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_morador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `visitante`
